@@ -1,13 +1,29 @@
 {
   "name": "xedikehome",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "nodemon server.js",
     "start": "node server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.9",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khoapham20999/fs-05-xedikehome.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khoapham20999/fs-05-xedikehome/issues"
+  },
+  "homepage": "https://github.com/khoapham20999/fs-05-xedikehome#readme",
+  "description": ""
 }

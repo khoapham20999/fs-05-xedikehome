@@ -29,15 +29,19 @@ router.put(
   tripController.updateTripById
 );
 
-router.post("/book-trip/:tripId",
-authenticate,
-// authorize(["passenger"]), 
-tripController.bookTrip)
+router.post(
+  "/book-trip/:tripId",
+  authenticate,
+  // authorize(["passenger"]),
+  tripController.bookTrip
+);
 
-router.post("/finish-trip/:tripId",
-authenticate,
-// authorize(["passenger"]), 
-tripController.finishTrip)
+router.post(
+  "/finish-trip/:tripId",
+  authenticate,
+  // authorize(["passenger"]),
+  tripController.finishTrip
+);
 
 module.exports = router;
 // export default router

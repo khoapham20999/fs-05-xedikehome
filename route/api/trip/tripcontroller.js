@@ -130,13 +130,14 @@ module.exports.bookTrip = (req, res, next) => {
 
 module.exports.finishTrip = (req, res, next) => {
   const { tripId } = req.params;
-    trip.findById(tripId) 
-    .then(trip =>{
-        trip.isFinish = true 
-        return trip.save()
+  trip
+    .findById(tripId)
+    .then(trip => {
+      trip.isFinish = true;
+      return trip.save();
     })
     .then(trip => {
-        res.status(200).json(trip)
+      res.status(200).json(trip);
     })
-    .catch(err => res.json(err))
+    .catch(err => res.json(err));
 };

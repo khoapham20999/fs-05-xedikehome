@@ -41,7 +41,7 @@ const validatePostInput = async data => {
   if (validator.isEmpty(data.dob)) {
     errors.dob = "date is required";
   }
-  // userType 
+  // userType
 
   if (
     !validator.equals(data.userType, "driver") &&
@@ -50,7 +50,6 @@ const validatePostInput = async data => {
   ) {
     errors.userType = "userType is required";
   }
-
 
   return {
     isValid: _.isEmpty(errors),
